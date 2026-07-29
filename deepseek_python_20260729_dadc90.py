@@ -1,3 +1,4 @@
+import os  # 添加这一行，放在文件最开头
 import yfinance as yf
 import pandas as pd
 import smtplib
@@ -12,8 +13,8 @@ STOCKS = ["SKHY", "MSFT", "SNDK", "MU","STX","WDC", "^GSPC"]  # ^GSPC 是标普5
 # QQ邮箱SMTP配置
 SMTP_SERVER = "smtp.qq.com"
 SMTP_PORT = 465  # SSL加密端口
-SENDER_EMAIL = "494923589@qq.com"  # 发送邮件的邮箱
-AUTH_CODE = "ezrxvfevzxpubhbc"      # 上一步获取的授权码，不是QQ密码！
+SENDER_EMAIL = os.getenv('QQ_EMAIL')
+AUTH_CODE = os.getenv('QQ_AUTH_CODE')     # 上一步获取的授权码，不是QQ密码！
 RECEIVER_EMAIL = "doublesone@outlook.com" # 接收邮件的邮箱
 # =======================================================
 
