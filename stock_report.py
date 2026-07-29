@@ -16,7 +16,7 @@ from io import BytesIO  # 【新增】用于内存中处理图片
 # ============================================================
 # 位置2：配置区域（保持不变）
 # ============================================================
-STOCKS = ["AAPL", "MSFT", "GOOGL", "AMZN", "^GSPC"]
+STOCKS = ["SKHY", "MSFT", "SNDK", "MU","STX","WDC", "^GSPC"]  # ^GSPC 是标普500指数
 
 SMTP_SERVER = "smtp.qq.com"
 SMTP_PORT = 465
